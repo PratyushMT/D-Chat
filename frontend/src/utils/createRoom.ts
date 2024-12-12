@@ -6,7 +6,7 @@ export const createRoom = (
   setEnteredRoomId: React.Dispatch<React.SetStateAction<string>>
 ) => {
   if (socket && username.trim()) {
-    fetch('http://localhost:3001/generate-room')
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/generate-room`)
       .then(res => res.json())
       .then((data: { roomId: string }) => {
         socket.emit('join-room', data.roomId, username, true);
