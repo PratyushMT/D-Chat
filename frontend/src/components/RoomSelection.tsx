@@ -1,6 +1,7 @@
 import { PlusCircle, ArrowLeft } from 'lucide-react'
 import { handleKeyPress } from '../utils/handleKeyPress'
 
+// @ts-ignore
 export const RoomSelection = ({
     setPage,
     createRoom, 

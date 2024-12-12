@@ -3,6 +3,7 @@ import { sendMessage } from '../utils/sendMessage'
 import { copyRoomId } from '../utils/copyRoomId'
 import { handleKeyPress } from '../utils/handleKeyPress'
 
+// @ts-ignore
 export const ChatRoom = ({
   socket,
   username,

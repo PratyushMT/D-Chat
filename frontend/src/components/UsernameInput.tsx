@@ -1,6 +1,7 @@
 import { User } from 'lucide-react'
 import { handleKeyPress } from '../utils/handleKeyPress'
 
+// @ts-ignore
 export const UsernameInput = ({
     username,
     setUsername,
